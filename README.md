@@ -8,9 +8,9 @@ Not everything here is absolutely required for setting up a system - as always, 
 
 The projects I usually deployed on these servers are Laravel applications, either running directly on the server in an Apache+PHP setup, or within a Docker container, proxied through NGINX.
 
-This guide went through many updates and iterations over the years, but I've just now gotten to managing it in a GitHub repo (it lived within a private Gist for a very long time prior to this).
+This guide went through many updates and iterations over the years, but I've just now gotten to managing it in a [GitHub repo](https://github.com/levacic/server-setup-guide) (it previously lived within a private Gist for a very long time).
 
-There is also a mirror of this guide on my blog.
+There is also a mirror of this guide [on my blog](https://blog.levacic.net/2020/12/19/server-setup-guide/).
 
 All right, let's go.
 
