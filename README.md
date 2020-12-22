@@ -1034,16 +1034,21 @@ You now have a working Docker Engine on your system.
 
 If you're not behind a load balancer (which I strongly suggest you should be within an AWS setup), and you want to set up Let's Encrypt for certificates, that's easy-peasy!
 
-The best choice is to follow the official instructions for configuring Certbot, which are available [here](https://certbot.eff.org/#ubuntuxenial-apache) for the setup we're working with. In short, however, we need to perform the steps outlined below.
+The best choice is to follow the official instructions for configuring Certbot, which are available [here](https://certbot.eff.org/lets-encrypt/ubuntufocal-apache) for the setup we're working with. In short, however, we need to perform the steps outlined below.
 
 Install Certbot:
 
 ```sh
-sudo apt-get update
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:certbot/certbot
-sudo apt-get update
-sudo apt-get install python-certbot-apache
+# Ensure snapd is up-to-date.
+sudo snap install core
+sudo snap refresh core
+
+# Install Certbot
+sudo snap install --classic certbot
+
+# Link Certbot into /usr/bin (alternatively add /snap/bin to $PATH. but it's a
+# better idea to explicitly symlink programs as needed).
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 
 After that, if using Apache, run:
