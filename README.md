@@ -1034,7 +1034,7 @@ You now have a working Docker Engine on your system.
 
 If you're not behind a load balancer (which I strongly suggest you should be within an AWS setup), and you want to set up Let's Encrypt for certificates, that's easy-peasy!
 
-The best choice is to follow the official instructions for configuring Certbot, which are available [https://certbot.eff.org/#ubuntuxenial-apache](here) for the setup we're working with. In short, however, we need to perform the steps outlined below.
+The best choice is to follow the official instructions for configuring Certbot, which are available [here](https://certbot.eff.org/#ubuntuxenial-apache) for the setup we're working with. In short, however, we need to perform the steps outlined below.
 
 Install Certbot:
 
